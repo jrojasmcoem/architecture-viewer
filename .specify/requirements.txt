@@ -1,0 +1,2 @@
+# CLI oficial de GitHub Spec Kit; no es una dependencia de la aplicación.
+specify-cli @ git+https://github.com/github/spec-kit.git@v1.1.1
