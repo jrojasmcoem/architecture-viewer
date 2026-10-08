@@ -41,6 +41,10 @@ existentes y documentar las reglas que representa. Ejecuta `npm run lint` y
 `npm run build` para validar los cambios de la aplicación; no afirmes que hay
 pruebas automatizadas, pues el proyecto no incluye infraestructura de tests.
 
+### VII. Idioma de archivos markdown
+
+Todos los archivos markdown (.md) crados, debe ser creados en español
+
 ## Restricciones del proyecto
 
 - Aplicación frontend local con React, Vite y `@xyflow/react`.
