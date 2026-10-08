@@ -1,4 +1,4 @@
-# CSP Atlas
+# Arquitectura Multivendor
 
 Visor local de arquitectura y flujo de negocio para presentaciones ante socios.
 Aplicación independiente con React, Vite y React Flow; no requiere Blazor, base de

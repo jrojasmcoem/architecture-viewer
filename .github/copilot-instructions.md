@@ -1,4 +1,4 @@
-# Guía de Copilot para CSP Atlas
+# Guía de Copilot para Arquitectura Multivendor
 
 - Este espacio de trabajo es `architecture-viewer/`, una aplicación local React/Vite
   para presentar y explorar diagramas interactivos.

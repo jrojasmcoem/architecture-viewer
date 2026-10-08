@@ -1,6 +1,6 @@
 ---
 name: speckit-checklist
-description: Crear una lista de calidad adecuada para una especificación de CSP Atlas.
+description: Crear una lista de calidad adecuada para una especificación de Arquitectura Multivendor.
 ---
 
 # Lista de verificación

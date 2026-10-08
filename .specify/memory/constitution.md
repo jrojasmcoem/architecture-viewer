@@ -1,10 +1,10 @@
-# Constitución de CSP Atlas
+# Constitución de Arquitectura Multivendor
 
 ## Principios fundamentales
 
 ### I. El diagrama es el producto
 
-CSP Atlas es una aplicación local de presentación para explorar diagramas
+Arquitectura Multivendor es una aplicación local de presentación para explorar diagramas
 interactivos de arquitectura y flujos de negocio. Toda funcionalidad DEBE servir
 a la comprensión y presentación de esos diagramas; no debe convertirse en una
 aplicación operativa.
@@ -63,4 +63,6 @@ de sus principios debe actualizar su versión y justificar el cambio. Cada
 especificación futura debe verificar explícitamente que no introduce formularios,
 CRUD, backend ni efectos operativos.
 
-**Versión**: 1.0.0 | **Ratificada**: 2026-10-08 | **Última enmienda**: 2026-10-08
+**Versión**: 1.0.1 | **Ratificada**: 2026-10-08 | **Última enmienda**: 2026-10-08
+(Enmienda 1.0.1: se renombra el producto de "CSP Atlas" a "Arquitectura
+Multivendor"; los principios no cambian.)

@@ -1,6 +1,6 @@
 ---
 name: speckit-specify
-description: Crear o actualizar la especificación de una funcionalidad para CSP Atlas.
+description: Crear o actualizar la especificación de una funcionalidad para Arquitectura Multivendor.
 ---
 
 # Especificación
