@@ -5,6 +5,8 @@ description: Resolver ambigüedades de una especificación de Arquitectura Multi
 
 # Aclarar especificación
 
+**Idioma**: conversa, pregunta y redacta todo en español, salvo que el usuario pida expresamente otro idioma (solo durante esa sesión).
+
 Revisa `spec.md` y la constitución para identificar únicamente ambigüedades que
 afecten alcance, comprensión del diagrama o accesibilidad. Formula preguntas
 concretas con opciones y espera las decisiones del usuario cuando no exista una

@@ -5,6 +5,8 @@ description: Diseñar la implementación técnica de una especificación de Arqu
 
 # Plan técnico
 
+**Idioma**: conversa, pregunta y redacta todo en español, salvo que el usuario pida expresamente otro idioma (solo durante esa sesión).
+
 Lee `spec.md`, la constitución y el código existente. Crea `plan.md` en la misma
 carpeta de la especificación usando `.specify/templates/plan-template.md`.
 Conserva literalmente las etiquetas `Language/Version`, `Primary Dependencies`,

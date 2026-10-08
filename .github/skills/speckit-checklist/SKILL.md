@@ -5,6 +5,8 @@ description: Crear una lista de calidad adecuada para una especificación de Arq
 
 # Lista de verificación
 
+**Idioma**: conversa, pregunta y redacta todo en español, salvo que el usuario pida expresamente otro idioma (solo durante esa sesión).
+
 Usa `.specify/templates/checklist-template.md` y los requisitos de la
 funcionalidad para crear una lista focalizada en su carpeta. Comprueba
 escenarios observables, accesibilidad, datos locales y alineación con la

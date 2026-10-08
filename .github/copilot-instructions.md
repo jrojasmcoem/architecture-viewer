@@ -1,5 +1,12 @@
 # Guía de Copilot para Arquitectura Multivendor
 
+- Idioma: responde, haz preguntas de aclaración y explica todo SIEMPRE en
+  español (CLI, chat y flujos de Spec Kit), aunque la solicitud esté en otro
+  idioma. Solo si el usuario pide explícitamente otro idioma, úsalo durante esa
+  sesión. Los artefactos y archivos `.md` también se escriben en español. El
+  código, los identificadores y las salidas literales de herramientas pueden
+  quedar en su idioma original, pero se explican en español.
+
 - Este espacio de trabajo es `architecture-viewer/`, una aplicación local React/Vite
   para presentar y explorar diagramas interactivos.
 - Respeta `.specify/memory/constitution.md`. No agregues formularios, CRUD,
