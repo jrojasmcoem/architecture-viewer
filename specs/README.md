@@ -1,4 +1,4 @@
-# Especificaciones de CSP Atlas
+# Especificaciones de Arquitectura Multivendor
 
 Cada funcionalidad futura tiene su propia carpeta con numeración secuencial,
 por ejemplo `001-navegacion-diagramas/`. Spec Kit genera allí `spec.md`,

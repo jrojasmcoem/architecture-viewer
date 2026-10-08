@@ -1,6 +1,6 @@
 ---
 name: speckit-tasks
-description: Generar tareas implementables a partir del plan de CSP Atlas.
+description: Generar tareas implementables a partir del plan de Arquitectura Multivendor.
 ---
 
 # Tareas

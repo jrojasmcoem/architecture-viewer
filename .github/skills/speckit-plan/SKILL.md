@@ -1,6 +1,6 @@
 ---
 name: speckit-plan
-description: Diseñar la implementación técnica de una especificación de CSP Atlas.
+description: Diseñar la implementación técnica de una especificación de Arquitectura Multivendor.
 ---
 
 # Plan técnico

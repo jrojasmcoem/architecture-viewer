@@ -1,6 +1,6 @@
 ---
 name: speckit-implement
-description: Implementar tareas aprobadas de una especificación de CSP Atlas.
+description: Implementar tareas aprobadas de una especificación de Arquitectura Multivendor.
 ---
 
 # Implementación

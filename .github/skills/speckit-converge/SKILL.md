@@ -1,6 +1,6 @@
 ---
 name: speckit-converge
-description: Comparar CSP Atlas implementado con la especificación y registrar brechas.
+description: Comparar Arquitectura Multivendor implementado con la especificación y registrar brechas.
 ---
 
 # Convergencia

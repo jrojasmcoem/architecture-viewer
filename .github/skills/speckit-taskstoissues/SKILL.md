@@ -1,6 +1,6 @@
 ---
 name: speckit-taskstoissues
-description: Preparar tareas de CSP Atlas como issues de GitHub cuando se solicite.
+description: Preparar tareas de Arquitectura Multivendor como issues de GitHub cuando se solicite.
 ---
 
 # Tareas a issues

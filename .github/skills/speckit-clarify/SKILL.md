@@ -1,6 +1,6 @@
 ---
 name: speckit-clarify
-description: Resolver ambigüedades de una especificación de CSP Atlas antes de planificarla.
+description: Resolver ambigüedades de una especificación de Arquitectura Multivendor antes de planificarla.
 ---
 
 # Aclarar especificación

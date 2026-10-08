@@ -92,7 +92,7 @@ export default function App() {
     <div className={`app-shell${presentation ? ' presentation' : ''}`}>
       <aside className="sidebar">
         <a className="brand" href="#overview" onClick={(event) => { event.preventDefault(); navigate('overview') }}>
-          <span className="brand-mark">◈</span><span>CSP <b>Atlas</b><small>ARQUITECTURA & NEGOCIO</small></span>
+          <span className="brand-mark">◈</span><span>Arquitectura Multivendor</span>
         </a>
         <div className="sidebar-heading">MAPA DEL SISTEMA</div>
         <nav aria-label="Vistas de diagramas">
