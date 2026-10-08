@@ -43,7 +43,17 @@ pruebas automatizadas, pues el proyecto no incluye infraestructura de tests.
 
 ### VII. Idioma de archivos markdown
 
-Todos los archivos markdown (.md) crados, debe ser creados en español
+Todos los archivos markdown (.md) creados DEBEN estar en español.
+
+### VIII. Comunicación siempre en español
+
+Toda interacción con Copilot, el CLI, el chat o cualquier otro modelo o agente
+(respuestas, preguntas de aclaración, opciones, resúmenes, mensajes de progreso
+y artefactos de Spec Kit) DEBE estar en español, sin importar el idioma de la
+solicitud, salvo que el usuario pida expresamente otro idioma, y solo durante
+esa sesión. Código, identificadores, comandos y salidas literales de
+herramientas pueden conservar su idioma original, pero su explicación DEBE
+darse en español.
 
 ## Restricciones del proyecto
 
@@ -63,6 +73,8 @@ de sus principios debe actualizar su versión y justificar el cambio. Cada
 especificación futura debe verificar explícitamente que no introduce formularios,
 CRUD, backend ni efectos operativos.
 
-**Versión**: 1.0.1 | **Ratificada**: 2026-10-08 | **Última enmienda**: 2026-10-08
+**Versión**: 1.1.0 | **Ratificada**: 2026-10-08 | **Última enmienda**: 2026-10-08
+(Enmienda 1.1.0: se añade el principio VIII, comunicación siempre en español,
+y se corrige la redacción del principio VII; no cambia el alcance del producto.)
 (Enmienda 1.0.1: se renombra el producto de "CSP Atlas" a "Arquitectura
 Multivendor"; los principios no cambian.)

@@ -5,6 +5,8 @@ description: Crear o actualizar la especificación de una funcionalidad para Arq
 
 # Especificación
 
+**Idioma**: conversa, pregunta y redacta todo en español, salvo que el usuario pida expresamente otro idioma (solo durante esa sesión).
+
 Usa el texto del usuario como entrada y lee primero la constitución. Crea una
 carpeta secuencial `specs/NNN-nombre-breve/` y redacta `spec.md` con
 `.specify/templates/spec-template.md`. Describe necesidades de presentación y
