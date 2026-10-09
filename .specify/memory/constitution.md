@@ -94,6 +94,33 @@ darse en español.
   especificada). Un parámetro por proveedor puede impedir continuar el pedido si
   costo fabricante + margen parametrizado supera el precio máximo sugerido.
 
+## Reglas de negocio de CSP-Tenant
+
+- CSP y Tenant forman un conjunto inseparable (no existe uno sin el otro), con
+  relación uno a uno y asociado a un cliente. El Tenant intermedia entre
+  Controles Empresariales (razón social del distribuidor) y el proveedor.
+- Segmentos: Comercial, Educación, Gobierno y Sin ánimo de lucro. Subsegmentos:
+  Educación (Sin ánimo de lucro, Educación superior, Colegios) y Gobierno
+  (Federal, Estatal); Comercial y Sin ánimo de lucro no tienen.
+- Contactos (nombre, correo, teléfono) con un contacto principal que recibe las
+  notificaciones del flujo.
+- Traslado a otro cliente solo si el cliente destino está Activo, el CSP-Tenant
+  está Activo y el cliente está en la plataforma Multivendor.
+- Creación: «Nuevo» (no es un estado; inicia en Pendiente Creación mientras un
+  servicio Windows lo procesa); «Existente bajo otro distribuidor» (Pendiente
+  Invitación → invitación por Adobe Sign con webhook → Pendiente Validación
+  Invitación); «Existente creado fuera de la plataforma» (Pendiente Aprobación,
+  sin solicitud al cliente, con notificación a Operaciones). En los dos casos
+  existentes, Operaciones consulta si el Tenant está asociado a Controles
+  Empresariales: si lo está pasa a Activo; si no, se muestra un error y se
+  gestiona manualmente.
+- Estados: Activo, Inactivo (manual solo por Operaciones, o automático si deja
+  de estar bajo el dominio de Controles Empresariales), Pendiente Creación,
+  Pendiente Invitación, Pendiente Validación Invitación, Pendiente Aprobación y
+  Pendiente Aceptación de términos y condiciones (deprecado).
+- Las funcionalidades propias de cada proveedor (Compromisos y Recomendaciones,
+  solo Adobe) se describen solo de forma global.
+
 ## Gobernanza
 
 Esta constitución define el alcance del producto y prevalece sobre decisiones
@@ -102,7 +129,9 @@ de sus principios debe actualizar su versión y justificar el cambio. Cada
 especificación futura debe verificar explícitamente que no introduce formularios,
 CRUD, backend ni efectos operativos.
 
-**Versión**: 1.2.0 | **Ratificada**: 2026-10-08 | **Última enmienda**: 2026-10-09
+**Versión**: 1.3.0 | **Ratificada**: 2026-10-08 | **Última enmienda**: 2026-10-09
+(Enmienda 1.3.0: se documentan las reglas de negocio de CSP-Tenant; no cambia
+el alcance del producto.)
 (Enmienda 1.2.0: se documentan las reglas de negocio de productos; no cambia
 el alcance del producto.)
 (Enmienda 1.1.0: se añade el principio VIII, comunicación siempre en español,
