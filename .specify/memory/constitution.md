@@ -65,6 +65,35 @@ darse en español.
 - Mantener `architecture-viewer/` como ámbito de este Spec Kit. La configuración
   SDD de la raíz pertenece a otro proyecto y no debe modificarse desde aquí.
 
+## Reglas de negocio de productos
+
+- Un producto tiene costo fabricante, precio máximo sugerido, segmento
+  (Comercial, Educación o Gobierno), código proveedor, términos de duración y
+  ciclos de facturación.
+- El código interno lo calcula el sistema concatenando código proveedor,
+  segmento, término de facturación y duración (ej.
+  `65324789CA13A12:0-Comercial-Anual-P3Y`); garantiza unicidad porque el
+  proveedor repite su código con costos distintos por término y segmento.
+- Tipos según proveedor: Trial (prueba, normalmente sin costo ni precio máximo
+  sugerido), Costo Cero (complemento sin valor) e Introductorio (precio
+  especial, fuera de la lista regular, solo ventas autorizadas).
+- Estados: Activo (puede agregarse al pedido); Descontinuado (fuera de la lista
+  de precios, sin ventas nuevas, solo renovación para clientes con suscripción
+  activa); Inactivo (fuera de la lista actual o inactivado manualmente);
+  Inconsistente (creado por la sincronización y pendiente de clasificación
+  manual, tras lo cual pasa a Activo).
+- Sincronización: servicio Windows diario (~2 a. m.) que consulta por API por
+  proveedor y segmento, genera un CSV por lista de precios, actualiza o crea
+  (como Inconsistente) línea por línea, borra cada archivo procesado y, al
+  final, inactiva solo los productos Activos con fecha de actualización anterior
+  a la ejecución. Si falla la actualización de precios se notifica al buzón de
+  operaciones parametrizado en base de datos.
+- Venta: solo productos Activos y del mismo segmento del CSP-Tenant. Los
+  márgenes de utilidad se parametrizan por producto; sin ellos el sistema
+  calcula el margen entre costo fabricante y precio máximo sugerido (fórmula no
+  especificada). Un parámetro por proveedor puede impedir continuar el pedido si
+  costo fabricante + margen parametrizado supera el precio máximo sugerido.
+
 ## Gobernanza
 
 Esta constitución define el alcance del producto y prevalece sobre decisiones
@@ -73,7 +102,9 @@ de sus principios debe actualizar su versión y justificar el cambio. Cada
 especificación futura debe verificar explícitamente que no introduce formularios,
 CRUD, backend ni efectos operativos.
 
-**Versión**: 1.1.0 | **Ratificada**: 2026-10-08 | **Última enmienda**: 2026-10-08
+**Versión**: 1.2.0 | **Ratificada**: 2026-10-08 | **Última enmienda**: 2026-10-09
+(Enmienda 1.2.0: se documentan las reglas de negocio de productos; no cambia
+el alcance del producto.)
 (Enmienda 1.1.0: se añade el principio VIII, comunicación siempre en español,
 y se corrige la redacción del principio VII; no cambia el alcance del producto.)
 (Enmienda 1.0.1: se renombra el producto de "CSP Atlas" a "Arquitectura
